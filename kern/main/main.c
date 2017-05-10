@@ -102,9 +102,11 @@ boot(void)
 	kprintf("%s", harvard_copyright);
 	kprintf("\n");
 
-	kprintf("Put-your-group-name-here's system version %s (%s #%d)\n",
+	kprintf("Norman & Bridget system version %s (%s #%d)\n",
 		GROUP_VERSION, buildconfig, buildversion);
 	kprintf("\n");
+
+        kprintf("Hello World!\n");
 
 	/* Early initialization. */
 	ram_bootstrap();
